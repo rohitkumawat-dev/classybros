@@ -1,4 +1,4 @@
-# 4 Thrivers
+Namaste !!!
 Open index.html in a browser. No installation needed. Upload this folder to your static host; vercel.json is included.
 
 Portraits are bundled in assets/team. Light/dark preference is stored in this browser. Desktop sections occupy at least one viewport; short windows and enlarged text scroll without clipping. Mobile uses natural layouts.
