@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="4 Thrivers — Four minds. One direction. A team portfolio." />
+  <meta name="theme-color" content="#090d14" />
+  <title>4 Thrivers — Team Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem("4thrivers-theme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark")}catch(e){document.documentElement.dataset.theme="dark"}</script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="4 Thrivers home">
+        <span class="brand-mark">4</span>
+        <span>THRIVERS</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#team">Team</a>
+        <a href="#roles">Roles</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#work">Portfolio</a>
+      </div>
+
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch to light mode">☀ <span>Light mode</span></button>
+      <a class="nav-cta" href="#team">Meet the team <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <h1>Four minds.<br><em>One direction.</em></h1>
+          <p class="hero-text">
+            4 Thrivers brings leadership, analysis, presentation and coding together
+            to turn ideas into clear, confident outcomes.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#team">Meet our team <span>→</span></a>
+            <a class="btn btn-ghost" href="#analytics">Explore team DNA</a>
+          </div>
+          <div class="hero-meta">
+            <div><strong>04</strong><span>Members</span></div>
+            <div><strong>04</strong><span>Core roles</span></div>
+            <div><strong>01</strong><span>Shared goal</span></div>
+          </div>
+        </div>
+
+        <div class="hero-orbit reveal">
+          <div class="orbit-ring ring-a"></div>
+          <div class="orbit-ring ring-b"></div>
+          <div class="orbit-core">
+            <span>4</span>
+            <small>THRIVERS</small>
+          </div>
+          <div class="orbit-card card-a"><span>01</span> Leadership</div>
+          <div class="orbit-card card-b"><span>02</span> Analysis</div>
+          <div class="orbit-card card-c"><span>03</span> Presentation</div>
+          <div class="orbit-card card-d"><span>04</span> Coding</div>
+        </div>
+      </div>
+      <div class="scroll-hint">SCROLL TO DISCOVER <span>↓</span></div>
+    </section>
+
+
+    <section class="team section" id="team">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="section-label">02 / MEET THE TEAM</div>
+            <h2>The people behind<br><span>4 Thrivers.</span></h2>
+          </div>
+          <p>Replace the four portraits with your team's actual photographs.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="member-card member-lead reveal" data-member="gaurav">
+            <div class="member-image">
+              <img src="assets/team/gaurav.jpg" alt="Gaurav portrait" />
+              <div class="member-index">01</div>
+              <div class="member-role">TEAM LEADER</div>
+            </div>
+            <div class="member-info">
+              <div><h3>Gaurav</h3><p>Leadership & Direction</p></div>
+              <button class="profile-btn" data-open="gaurav" aria-label="View Gaurav profile">↗</button>
+            </div>
+          </article>
+
+          <article class="member-card reveal" data-member="shruthik">
+            <div class="member-image">
+              <img src="assets/team/shruthik.jpg" alt="Shruthik portrait" />
+              <div class="member-index">02</div>
+              <div class="member-role">ANALYST</div>
+            </div>
+            <div class="member-info">
+              <div><h3>Shruthik</h3><p>Research & Analysis</p></div>
+              <button class="profile-btn" data-open="shruthik" aria-label="View Shruthik profile">↗</button>
+            </div>
+          </article>
+
+          <article class="member-card reveal" data-member="palak">
+            <div class="member-image">
+              <img src="assets/team/palak.jpg" alt="Palak portrait" />
+              <div class="member-index">03</div>
+              <div class="member-role">PRESENTER</div>
+            </div>
+            <div class="member-info">
+              <div><h3>Palak</h3><p>Communication & Presentation</p></div>
+              <button class="profile-btn" data-open="palak" aria-label="View Palak profile">↗</button>
+            </div>
+          </article>
+
+          <article class="member-card reveal" data-member="shraddha">
+            <div class="member-image">
+              <img src="assets/team/shraddha.jpg" alt="Shraddha portrait" />
+              <div class="member-index">04</div>
+              <div class="member-role">CODER</div>
+            </div>
+            <div class="member-info">
+              <div><h3>Shraddha</h3><p>Technology & Development</p></div>
+              <button class="profile-btn" data-open="shraddha" aria-label="View Shraddha profile">↗</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="roles section" id="roles">
+      <div class="container">
+        <div class="section-label reveal">03 / HOW WE WORK</div>
+        <div class="roles-head reveal">
+          <h2>Four roles.<br><span>One workflow.</span></h2>
+          <p>Each responsibility feeds the next, creating a simple team pipeline from idea to outcome.</p>
+        </div>
+
+        <div class="flow">
+          <div class="flow-line"></div>
+          <div class="flow-item reveal">
+            <div class="flow-no">01</div><div class="flow-icon">L</div>
+            <h3>Lead</h3><p>Gaurav aligns the team, direction and priorities.</p>
+          </div>
+          <div class="flow-item reveal">
+            <div class="flow-no">02</div><div class="flow-icon">A</div>
+            <h3>Analyse</h3><p>Shruthik turns information into useful insight.</p>
+          </div>
+          <div class="flow-item reveal">
+            <div class="flow-no">03</div><div class="flow-icon">P</div>
+            <h3>Present</h3><p>Palak turns the work into a clear story.</p>
+          </div>
+          <div class="flow-item reveal">
+            <div class="flow-no">04</div><div class="flow-icon">C</div>
+            <h3>Code</h3><p>Shraddha brings the digital solution to life.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="analytics section section-light" id="analytics">
+      <div class="container">
+        <div class="section-label reveal">04 / TEAM ANALYTICS</div>
+        <div class="analytics-head reveal">
+          <div>
+            <h2>Our team <span>DNA.</span></h2>
+            <p>These are role-composition indicators, not invented performance scores.</p>
+          </div>
+          <div class="dna-badge">TEAM 04 <span>•</span> 4 ROLES</div>
+        </div>
+
+        <div class="analytics-grid">
+          <div class="radar-card reveal">
+            <div class="radar">
+              <div class="radar-ring r1"></div><div class="radar-ring r2"></div><div class="radar-ring r3"></div>
+              <div class="radar-shape"></div>
+              <span class="r-label r-top">LEADERSHIP</span>
+              <span class="r-label r-right">ANALYSIS</span>
+              <span class="r-label r-bottom">CODING</span>
+              <span class="r-label r-left">PRESENTATION</span>
+              <div class="radar-center">4T</div>
+            </div>
+          </div>
+
+          <div class="bars-card reveal">
+            <div class="metric"><div><span>Leadership</span><b>01 / 04</b></div><i><span style="width:25%"></span></i></div>
+            <div class="metric"><div><span>Analysis</span><b>01 / 04</b></div><i><span style="width:25%"></span></i></div>
+            <div class="metric"><div><span>Presentation</span><b>01 / 04</b></div><i><span style="width:25%"></span></i></div>
+            <div class="metric"><div><span>Coding</span><b>01 / 04</b></div><i><span style="width:25%"></span></i></div>
+            <div class="metric total"><div><span>Role coverage</span><b>04 / 04</b></div><i><span style="width:100%"></span></i></div>
+          </div>
+        </div>
+
+        <div class="stat-strip reveal">
+          <div><strong data-count="4">0</strong><span>Core members</span></div>
+          <div><strong data-count="4">0</strong><span>Defined roles</span></div>
+          <div><strong data-count="100">0</strong><span>% role coverage</span></div>
+          <div><strong>01</strong><span>Shared direction</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio section" id="work">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <div class="section-label">05 / PORTFOLIO</div>
+            <h2>Ideas into <span>outcomes.</span></h2>
+          </div>
+          <p>Add your actual projects here as your team completes them.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-main reveal">
+            <div class="project-top"><span>PROJECT 01</span><span>TEAM 04</span></div>
+            <div class="project-art"><span>4</span><div class="art-lines"></div></div>
+            <div class="project-bottom"><div><h3>Signature Project</h3><p>Replace this with your main project title and one-line result.</p></div><span class="project-arrow">↗</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top"><span>PROJECT 02</span><span>RESEARCH</span></div>
+            <div class="project-art mini"><span>A</span></div>
+            <div class="project-bottom"><div><h3>Analysis Story</h3><p>Research, insights and findings.</p></div><span class="project-arrow">↗</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top"><span>PROJECT 03</span><span>BUILD</span></div>
+            <div class="project-art mini"><span>C</span></div>
+            <div class="project-bottom"><div><h3>Digital Build</h3><p>Prototype, website or technical solution.</p></div><span class="project-arrow">↗</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section">
+      <div class="container closing-inner reveal">
+        <div class="closing-kicker">THE 4 THRIVERS STANDARD</div>
+        <h2>Different strengths.<br><em>One direction.</em></h2>
+        <a class="btn btn-primary" href="#team">Meet the team <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="brand"><span class="brand-mark">4</span><span>THRIVERS</span></div>
+      <p>Lead. Analyse. Present. Build.</p>
+      <p>© <span id="year"></span> 4 Thrivers</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="profileModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalName" tabindex="-1">
+      <button class="modal-close" data-close aria-label="Close profile">×</button>
+      <div class="modal-number" id="modalNumber">01</div>
+      <div class="modal-photo"><img id="modalImage" src="" alt="" /></div>
+      <div class="modal-copy">
+        <div class="eyebrow" id="modalRole">TEAM LEADER</div>
+        <h2 id="modalName">Gaurav</h2>
+        <p id="modalDescription"></p>
+        <div class="modal-tags" id="modalTags"></div>
+        <div class="profile-projects"><h3>Selected projects <small>Sample content</small></h3><ul id="modalProjects"></ul></div>
+        <button type="button" id="contactBtn" class="btn btn-primary" aria-expanded="false" aria-controls="contactDetails">Contact me ↗</button>
+        <div id="contactDetails" class="contact-details" hidden></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
