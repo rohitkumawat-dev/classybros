@@ -40,13 +40,19 @@ profiles.shruthik.projects = ["Student Feedback Analysis — research and insigh
 profiles.palak.projects = ["Team Portfolio — presentation and storytelling", "Campus Innovation Pitch — slides and concept communication"];
 profiles.shraddha.projects = ["Team Portfolio — responsive interface development", "Student Task Tracker — interface and interactions"];
 let previousFocus;
-const modal = document.getElementById("profileModal");
-const modalImage = document.getElementById("modalImage");
-const modalName = document.getElementById("modalName");
-const modalRole = document.getElementById("modalRole");
-const modalNumber = document.getElementById("modalNumber");
-const modalDescription = document.getElementById("modalDescription");
-const modalTags = document.getElementById("modalTags");
+//Cached all the elements at once ...hehe
+const modalElements = {
+  modal: document.getElementById("profileModal"),
+  image: document.getElementById("modalImage"),
+  name: document.getElementById("modalName"),
+  role: document.getElementById("modalRole"),
+  number: document.getElementById("modalNumber"),
+  description: document.getElementById("modalDescription"),
+  tags: document.getElementById("modalTags"),
+  projects: document.getElementById("modalProjects"),
+  contactDetails: document.getElementById("contactDetails"),
+  contactBtn: document.getElementById("contactBtn")
+};
 
 document.querySelectorAll("[data-open]").forEach(btn => {
   btn.addEventListener("click", () => {
