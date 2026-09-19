@@ -4,4 +4,4 @@ Click a member arrow for their introduction, sample projects and Contact me butt
 
 Includes keyboard focus handling, Escape to close profiles, hover animations and reduced-motion support. Google Fonts uses internet; fallback fonts work offline.
 
-And Btw This website was built for an GDG event from just 4 lines of description from other team ! 
+Website was made from other teams 4 line of description about their website ..
